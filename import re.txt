@@ -1,0 +1,7 @@
+import re
+ 
+text = "привет.как дела?чем занимаешься?"
+ 
+sentences = re.findall(r"\s*([^.?!]+)\s*", text)
+ 
+print(f"Найдено: {len(sentences)}.\nНайденные предложения: {sentences}.")

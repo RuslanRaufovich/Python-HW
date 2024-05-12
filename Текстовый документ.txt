@@ -1,0 +1,10 @@
+mytext = "У меня в холодильнике чего только нету: ни колбасы, ни молока, ни сыра, ни шоколадки."
+mytext_temp = mytext.lower()
+listold = list(mytext.split())
+listnew = list(mytext_temp.split())
+word = ["колбасы","сыра","молока","шоколадки"]
+for i in range(len(listnew)) :
+    for j in word :
+        if j in listnew[i] :
+            listold[i] = listnew[i].upper()
+print(' '.join(listold))
